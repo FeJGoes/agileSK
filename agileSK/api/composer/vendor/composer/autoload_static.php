@@ -35,6 +35,10 @@ class ComposerStaticInit7b56a12f046845a26089d7abfd626ee7
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
+        'R' => 
+        array (
+            'RedBeanPHP\\' => 11,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Server\\' => 16,
@@ -68,6 +72,7 @@ class ComposerStaticInit7b56a12f046845a26089d7abfd626ee7
         'C' => 
         array (
             'Controllers\\' => 12,
+            'Configs\\' => 8,
         ),
     );
 
@@ -79,6 +84,10 @@ class ComposerStaticInit7b56a12f046845a26089d7abfd626ee7
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'RedBeanPHP\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/../src/Libs/RedBean',
         ),
         'Psr\\Http\\Server\\' => 
         array (
@@ -133,6 +142,10 @@ class ComposerStaticInit7b56a12f046845a26089d7abfd626ee7
         'Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/../src/Controllers',
+        ),
+        'Configs\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/../src/Configs',
         ),
     );
 
@@ -269,6 +282,56 @@ class ComposerStaticInit7b56a12f046845a26089d7abfd626ee7
         'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'Psr\\Http\\Server\\MiddlewareInterface' => __DIR__ . '/..' . '/psr/http-server-middleware/src/MiddlewareInterface.php',
         'Psr\\Http\\Server\\RequestHandlerInterface' => __DIR__ . '/..' . '/psr/http-server-handler/src/RequestHandlerInterface.php',
+        'RedBeanPHP\\Adapter' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Adapter\\DBAdapter' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\AssociationManager' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\BeanCollection' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\BeanHelper' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\BeanHelper\\SimpleFacadeBeanHelper' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Cursor' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Cursor\\NullCursor' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Cursor\\PDOCursor' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Driver' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Driver\\RPDO' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\DuplicationManager' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Facade' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Finder' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Jsonable' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\LabelMaker' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Logger' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Logger\\RDefault' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Logger\\RDefault\\Debug' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\OODB' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\OODBBean' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Observable' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Observer' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Plugin' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter\\AQueryWriter' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter\\CUBRID' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter\\MySQL' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter\\PostgreSQL' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\QueryWriter\\SQLiteT' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\RedException' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\RedException\\SQL' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Repository' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Repository\\Fluid' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Repository\\Frozen' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\SimpleModel' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\SimpleModelHelper' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\TagManager' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\ToolBox' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\ArrayTool' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Diff' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\DispenseHelper' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Dump' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Feature' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Look' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\MatchUp' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\MultiLoader' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\QuickExport' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Transaction' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
+        'RedBeanPHP\\Util\\Tree' => __DIR__ . '/../..' . '/../src/Libs/RedBean/rb.php',
         'Slim\\App' => __DIR__ . '/..' . '/slim/slim/Slim/App.php',
         'Slim\\CallableResolver' => __DIR__ . '/..' . '/slim/slim/Slim/CallableResolver.php',
         'Slim\\Error\\AbstractErrorRenderer' => __DIR__ . '/..' . '/slim/slim/Slim/Error/AbstractErrorRenderer.php',

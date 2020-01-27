@@ -1,29 +1,41 @@
 <?php
 namespace Controllers;
 
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+
 class LoginController {
     protected $email;
     protected $senha;
+    protected $status; 
 
-    public function __construct(string $email, string $senha){
-        $this->email = $email;
-        $this->senha = $senha;
-    }
-
-    public function possoEntrar(){
+    public function possoEntrar(Request $request, Response $response, $args){
+        $post = $request->getParsedBody();
+        $this->email = $post['email'];
+        $this->senha = $post['senha'];
+        
+     
         if ($this->email == 'teste@mail.com'){
             if($this->senha == '123456'){
-                $return['error'] = FALSE;
-                $return['message'] = 'Bem vindo';
+                if($this->status == 'ativo') {
+                    $result['error'] = FALSE;
+                    $result['message'] = 'Bem vindo';
+                } else {
+                    $result['error'] = TRUE;
+                    $result['message'] = 'usuário ainda não foi confirmado';
+                }
             } else {
-                $return['error'] = TRUE;
-                $return['message'] = 'senha não corresponde ao cadastro';
+                $result['error'] = TRUE;
+                $result['message'] = 'senha não corresponde ao cadastro';
             }
         } else {
-            $return['error'] = TRUE;
-            $return['message'] = 'email não cadastrado';
+            $result['error'] = TRUE;
+            $result['message'] = 'email não cadastrado';
         }
-        return $return;
+        
+        $response->getBody()->write(json_encode($result));
+        return $response
+                 ->withHeader('Content-Type', 'application/json');
     }
 }
 

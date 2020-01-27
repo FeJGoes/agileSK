@@ -10,7 +10,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Controllers\\": "../src/Controllers/"
+            "Controllers\\": "../src/Controllers/",
+            "Configs\\": "../src/Configs/",
+            "RedBeanPHP\\": "../src/Libs/RedBean/"
         }
     }
 }
